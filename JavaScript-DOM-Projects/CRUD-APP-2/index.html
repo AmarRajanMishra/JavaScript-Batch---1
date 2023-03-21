@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="onFormSubmit()">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name = "name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name = "email" id="email">
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input type="text" name = "number" id="number">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <input type="text" name = "message" id="message">
+            </div>
+            <div><input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <div>
+            <h1>Counter App</h1>
+            <h1 id="counter">0</h1>
+            <button onclick="incrementFun()">Increment</button>
+            <button onclick="decrementFun()">Decrement</button>
+            <button onclick="resetFun()">Reset</button>
+            <div>
+                <h1>Counter Two</h1>
+                <h1 id="countertwo">0</h1>
+                <button id="plustwo">Increment</button>
+            <button id="minustwo">Decrement</button>
+            <button id="resettwo">Reset</button>
+            </div>
+            <div>
+                <h1>Counter Three</h1>
+                <h1 id="counterthree">0</h1>
+                <button id="plus" onclick="handleNum('plus')">Increment</button>
+            <button id="minus" onclick="handleNum('minus')">Decrement</button>
+            <button id="reset" onclick="handleNum('reset')">Reset</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

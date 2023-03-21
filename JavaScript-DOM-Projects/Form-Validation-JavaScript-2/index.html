@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Form Validation</h1>
+        <div>
+            <form action="" name="myform" id="myform" onsubmit="return FormValidation()" method="post">
+                <div id="name">
+                    Name : <input type="text" name="fname" id="fname" placeholder="Enter Your name">
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div id="email">
+                    Email : <input type="text" name="email" id="email" placeholder="Enter Your name">
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div id="number">
+                    Mobile No. : <input type="text" name="number" id="number" placeholder="Enter Your name">
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div id="password">
+                    Password : <input type="text" name="password" id="password" placeholder="Enter Your name">
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div id="cpassword">
+                    Confirm Password : <input type="text" name="cpassword" id="cpassword" placeholder="Enter Your name">
+                    <b><span class="formerror"></span></b>
+                </div>
+                <div>
+                    <input type="submit" name="submit" id="submit" placeholder="Enter Your name" value="Submit">
+                    <b><span class="formerror"></span></b>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
